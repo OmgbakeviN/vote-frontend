@@ -96,7 +96,7 @@ export default function PublicPage() {
   if (loading) {
     return (
       <div className="mx-auto flex items-center justify-center">
-        <div className="spinner"></div>
+        <div className="spinner w-12 h-12 bg-blue-500"></div>
       </div>
     );
     
