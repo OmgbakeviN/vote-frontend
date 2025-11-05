@@ -94,13 +94,18 @@ export default function PublicPage() {
   };
 
   if (loading) {
-    return <div className="text-center py-20">Chargement…</div>;
+    return (
+      <div className="mx-auto flex items-center justify-center">
+        <div className="spinner"></div>
+      </div>
+    );
+    
   }
 
   if (!election) {
     return (
       <div className="max-w-2xl mx-auto text-center">
-        <h1 className="text-2xl font-semibold mb-2">Aucune élection en cours</h1>
+        <h1 className="text-2xl font-semibold mb-2">Aucune vote en cours</h1>
         <p className="text-slate-600">Revenez plus tard.</p>
       </div>
     );

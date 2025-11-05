@@ -11,7 +11,7 @@ export default function App() {
           <Link to="/" className="font-semibold text-lg">School Vote</Link>
           <nav className="flex gap-4">
             <Link className={`hover:underline ${pathname === "/" ? "font-bold" : ""}`} to="/">Public</Link>
-            <Link className={`hover:underline ${pathname === "/admin" ? "font-bold" : ""}`} to="/admin">Admin</Link>
+            {/* <Link className={`hover:underline ${pathname === "/admin" ? "font-bold" : ""}`} to="/admin">Admin</Link> */}
           </nav>
         </div>
       </header>
