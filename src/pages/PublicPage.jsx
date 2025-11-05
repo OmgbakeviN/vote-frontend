@@ -94,12 +94,7 @@ export default function PublicPage() {
   };
 
   if (loading) {
-    return (
-      <div className="mx-auto flex items-center justify-center">
-        <div className="spinner w-12 h-12 bg-blue-500"></div>
-      </div>
-    );
-    
+    return <div className="text-center py-20">Chargement…</div>;
   }
 
   if (!election) {
